@@ -1,0 +1,13 @@
+:root {
+    --extra: 153, 64%, 91%;
+    --background: 154, 92%, 5%;
+    --primary:183, 58%, 68%;
+    --secondairy: 100, 61%, 81%;
+    --accent: 180, 2%, 42%; 
+    
+    background-color:hsl(var(--background)) ;
+    color:hsl(var(--extra)) ;
+    border-color: hsl(var(--primary));
+    padding: 0;
+    margin: 0;
+}

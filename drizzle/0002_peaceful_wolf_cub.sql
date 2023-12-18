@@ -1,0 +1,1 @@
+ALTER TABLE `request` ADD CONSTRAINT `request_user_id_dog_id_unique` UNIQUE(`user_id`,`dog_id`);
