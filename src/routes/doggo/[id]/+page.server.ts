@@ -41,7 +41,7 @@ export const actions = {
         }
         
         return {
-            success: "You have now sent in a request for this dog",
+            success: "You have now sent in a request for this dog, you can view your pending requests on the profile page.",
         }
 	},
 } satisfies Actions;

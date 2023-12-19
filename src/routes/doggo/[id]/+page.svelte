@@ -42,7 +42,6 @@ img{
 }
 
 .post p{
-    width: 95%;
     padding-left: 5rem;
 }
 .post{
@@ -54,6 +53,7 @@ img{
     margin-bottom: 20%;
     margin-top: 10rem;
     margin-inline: auto;
+
 }
 
 button{
@@ -70,5 +70,6 @@ button{
     color: black;
     text-decoration: none;
 }
+
 
 </style>
