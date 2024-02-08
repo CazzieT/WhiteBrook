@@ -36,15 +36,18 @@ padding: 10px;
 margin-left: 4rem;
 }
 img{
-    width: 40%;
+    width: 300px;
+    max-width: 90%;
     height: 40%;
     border-radius: 20%;
+    margin-inline: auto;
 }
 
 .post p{
     padding-left: 5rem;
 }
 .post{
+    box-sizing: border-box;
     width: 90%;
     display: flex;
     border-radius: 5px;
@@ -53,7 +56,8 @@ img{
     margin-bottom: 20%;
     margin-top: 10rem;
     margin-inline: auto;
-
+    max-width: 869px;
+    padding-inline: 24px;
 }
 
 button{
@@ -71,5 +75,11 @@ button{
     text-decoration: none;
 }
 
+
+@media (max-width: 640px) {
+	.post {
+		flex-direction: column;
+	}
+}
 
 </style>

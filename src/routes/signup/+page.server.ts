@@ -66,7 +66,7 @@ export const actions: Actions = {
 				e.code === "ER_DUP_ENTRY"
 			) {
 				return fail(400, {
-					message: "Username already taken"
+					message: "An account with this Email already excist"
 				});
 			}
 			return fail(500, {

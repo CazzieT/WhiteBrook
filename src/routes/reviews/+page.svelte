@@ -69,12 +69,23 @@ gap: 15px;
     margin-inline: 15px;
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(3, 1fr);
 }
 .info{
     display: grid;
     text-align: center;
     padding: 20px;
     margin: 50px;
+}
+
+@media (min-width: 640px) {
+	.main {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (min-width: 920px) {
+	.main {
+		grid-template-columns: repeat(3, 1fr);
+	}
 }
 </style>

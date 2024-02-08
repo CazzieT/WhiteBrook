@@ -56,7 +56,6 @@ img{
     margin-inline: 15px;
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(3, 1fr);
 }
 .info{
     display: grid;
@@ -65,5 +64,11 @@ img{
     margin: 50px;
 }
 
+
+@media (min-width: 640px) {
+	.dogs {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
 
 </style>

@@ -16,11 +16,8 @@
 
 <style>
     h2{
-
-        width: 50px;
-        height: 50px;
         padding: 10px;
-        margin-left: 4rem;
+        text-align: center;
     }
 
 .info{
@@ -33,13 +30,15 @@ img{
     width: 40%;
     height: 40%;
     border-radius: 20%;
+    margin-inline: auto;
 }
 
-.post p{
-    width: 50%;
-    padding-left: 5rem;
+.post p {
+    padding-inline: 15px;
 }
+
 .post{
+    box-sizing: border-box;
     width: 90%;
     display: flex;
     border-radius: 5px;
@@ -47,5 +46,13 @@ img{
     border: 3px solid hsl(153, 64%, 91%);
     margin-bottom: 20%;
     margin-inline: auto;
+    max-width: 869px;
+    padding-inline: 24px;
 }
+@media (max-width: 640px) {
+	.post {
+		flex-direction: column;
+	}
+}
+
 </style>

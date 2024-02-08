@@ -8,13 +8,15 @@
 </script>
 
 
+<div class="profile">
+	<h1>Profile</h1>
+	<p>Username: {data.username}</p>
+	<p>User id: {data.userId}</p>
+	<form method="post" action="?/logout" use:enhance>
+		<input type="submit" value="Sign out" />
+	</form>
+</div>
 
-<h1>Profile</h1>
-<p>Username: {data.username}</p>
-<p>User id: {data.userId}</p>
-<form method="post" action="?/logout" use:enhance>
-	<input type="submit" value="Sign out" />
-</form>
 
 <div class="main">
 	<ul >
@@ -47,7 +49,7 @@
 	}
 	.main{
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		
 		place-items: center;
 	}
 	a{
@@ -57,8 +59,7 @@
     width: 200px;
     height: 50px;
     border-radius: 3px;
-    margin: 10px;
-    margin-left: 6rem;
+    margin: 10px;	
     background-color: hsl(100, 61%, 81%);
     border: 3px solid hsl(183, 58%, 68%);
     color: black;
@@ -86,5 +87,13 @@ ul {
     margin: 0;
     padding: 0;
 }
+.profile {
+	padding: 32px;
+}
 
+@media (min-width: 480px) {
+	.main {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
 </style>

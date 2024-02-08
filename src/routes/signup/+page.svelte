@@ -23,6 +23,9 @@
 		{#if form?.errors?.email}
 			<p>{form.errors.email}</p>
 		{/if}
+		{#if form?.message}
+		<p>{form.message}</p>
+		{/if}
 		<label for="password">Password</label>
 		<input type="password" name="password" id="password" /><br />
 		{#if form?.errors?.password}
@@ -33,7 +36,6 @@
 
 	
 </div>
-<a href="/login">Log in</a>
 
 <style>
 	div {
